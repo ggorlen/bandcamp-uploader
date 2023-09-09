@@ -4,18 +4,23 @@ const uploadAlbum = async (album, {username, password}) => {
   let browser;
   return (async () => {
     browser = await puppeteer.launch({
-      headless: true,
-      userDataDir: "/bandcamp-browserdata",
+      headless: "new",
+      userDataDir: "./bandcamp-browserdata",
     });
     const [page] = await browser.pages();
+    page.setDefaultTimeout(60_001);
+    page.setDefaultNavigationTimeout(60_002);
+    const ua =
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36";
+    await page.setUserAgent(ua);
     await page.goto("https://bandcamp.com/login");
 
     if (await page.$("#loginform")) {
       await page.type("#username-field", username);
       await page.type("#password-field", password);
       await Promise.all([
-        page.click('#loginform [type="submit"]'),
         page.waitForNavigation(),
+        page.click('#loginform [type="submit"]'),
       ]);
     }
 
