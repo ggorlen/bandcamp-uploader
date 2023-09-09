@@ -1,7 +1,7 @@
 {
   "name": "bandcamp-uploader",
   "version": "1.0.0",
-  "description": "Upload an album to Bandcamp",
+  "description": "Upload albums to Bandcamp",
   "main": "bandcamp-uploader.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,9 +19,8 @@
     "url": "https://github.com/ggorlen/bandcamp-uploader/issues"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "puppeteer-extra": "^3.1.18",
-    "puppeteer-extra-plugin-stealth": "^2.7.8"
+    "dotenv": "^16.3.1",
+    "puppeteer": "^21.1.1"
   },
-  "homepage": "https://github.com/ggorlen/prettybt#readme"
+  "homepage": "https://github.com/ggorlen/bandcamp-uploader#readme"
 }

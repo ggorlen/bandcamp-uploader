@@ -1,8 +1,8 @@
 require("dotenv").config();
 const {uploadAlbum} = require("./bandcamp-uploader");
 
-const username = process.env.BC_USERNAME;
-const password = process.env.BC_PASSWORD;
+const username = process.env.BANDCAMP_USERNAME;
+const password = process.env.BANDCAMP_PASSWORD;
 
 const sampleAlbum = {
   private: true,
@@ -45,7 +45,6 @@ const sampleAlbum = {
     },
   ],
 };
-uploadAlbum(sampleAlbum, {username, password})
-  .catch(err => console.error(err))
-;
-
+uploadAlbum(sampleAlbum, {username, password}).catch(err =>
+  console.error(err)
+);
