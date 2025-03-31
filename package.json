@@ -19,8 +19,8 @@
     "url": "https://github.com/ggorlen/bandcamp-uploader/issues"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "puppeteer": "^21.1.1"
+    "dotenv": "^16.4.7",
+    "puppeteer": "^24.4.0"
   },
   "homepage": "https://github.com/ggorlen/bandcamp-uploader#readme"
 }
