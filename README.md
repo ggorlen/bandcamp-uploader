@@ -4,11 +4,9 @@ Upload albums to bandcamp.
 
 Work in progress, but does what I need it to do so far.
 
-
 ### Usage
 
 See [`index.js`](index.js)
-
 
 ### TODO
 
