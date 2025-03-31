@@ -6,7 +6,11 @@ Work in progress, but does what I need it to do so far.
 
 ### Usage
 
-See [`index.js`](index.js)
+```
+npm i
+cp .env.sample .env # and add your BC artist credentials
+node index # modify code to meet your needs
+```
 
 ### TODO
 
