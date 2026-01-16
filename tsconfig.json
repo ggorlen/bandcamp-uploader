@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "strict": true
+  },
+  "include": ["src/**/*", "types/index.d.ts"]
+}

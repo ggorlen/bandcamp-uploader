@@ -1,10 +1,11 @@
 {
   "name": "bandcamp-uploader",
   "version": "1.0.0",
+  "type": "module",
   "description": "Upload albums to Bandcamp",
-  "main": "bandcamp-uploader.js",
+  "main": "src/bandcamp-uploader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "check-types": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,12 @@
     "dotenv": "^16.3.1",
     "puppeteer": "^24.35.0"
   },
+  "devDependencies": {
+    "typescript": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "types": "./types/index.d.ts",
   "homepage": "https://github.com/ggorlen/bandcamp-uploader#readme"
 }

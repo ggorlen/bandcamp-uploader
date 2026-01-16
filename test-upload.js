@@ -1,6 +1,7 @@
-require("dotenv").config();
-const {uploadAlbum} = require("./bandcamp-uploader");
+import dotenv from "dotenv";
+import { uploadAlbum } from "./src/index.js";
 
+dotenv.config();
 const username = process.env.BANDCAMP_USERNAME;
 const password = process.env.BANDCAMP_PASSWORD;
 
@@ -45,6 +46,4 @@ const sampleAlbum = {
     },
   ],
 };
-uploadAlbum(sampleAlbum, {username, password}).catch(err =>
-  console.error(err)
-);
+uploadAlbum(sampleAlbum, { username, password }).catch(console.error);
