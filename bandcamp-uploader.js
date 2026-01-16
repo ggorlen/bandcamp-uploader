@@ -117,7 +117,7 @@ const uploadAlbum = async (album, {username, password}) => {
     await page.waitForSelector(".view-published", {
       visible: true,
     });
-  })().finally(() => browser.close());
+  })().finally(() => browser?.close());
 };
 
 module.exports = {uploadAlbum};
