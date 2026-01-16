@@ -1,7 +1,6 @@
-import dotenv from "dotenv";
+import "dotenv/config";
 import { uploadAlbum } from "./src/index.js";
 
-dotenv.config();
 const username = process.env.BANDCAMP_USERNAME;
 const password = process.env.BANDCAMP_PASSWORD;
 
