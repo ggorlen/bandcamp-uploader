@@ -6,7 +6,15 @@ Work in progress, but does what I need it to do so far.
 
 ### Usage
 
-See [`test-upload.js`](test-upload.js)
+See [`test-upload.js`](test-upload.js) for programmatic usage.
+
+Running a quick test:
+
+```
+npm i
+cp .env.sample .env # and add your BC artist credentials
+node test-upload
+```
 
 ### TODO
 
