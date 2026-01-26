@@ -24,3 +24,4 @@ node test-upload
 - handle album/track options not handled yet
 - add merch and bonus item
 - add better command line support or JSON file config
+- add repeating monthly CI job that runs an E2E test to check for breaking changes
